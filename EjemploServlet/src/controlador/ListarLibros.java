@@ -19,7 +19,7 @@ public class ListarLibros extends HttpServlet{
 		ArrayList<Libro> libros = libroModelo.selectAll();
 		
 		request.setAttribute("libros", libros);
-		RequestDispatcher rd = request.getRequestDispatcher("vista/libros/listado.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/vista/libros/listado.jsp");
 		rd.forward(request, response);
 		
 	}
